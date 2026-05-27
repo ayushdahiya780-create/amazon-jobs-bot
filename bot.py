@@ -272,7 +272,7 @@ def do_check_now(bot, chat_id):
 
 def main():
     cfg = load_config()
-    token = cfg.get("telegram_token", "")
+    token = os.environ.get("TELEGRAM_TOKEN") or cfg.get("telegram_token", "")
     if not token or token == "PASTE_YOUR_BOT_TOKEN_HERE":
         print("=" * 50)
         print("❌ No token in config.json!")
