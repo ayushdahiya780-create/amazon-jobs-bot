@@ -252,7 +252,7 @@ def do_check_now(bot, chat_id):
             temp.seen_job_ids = monitor_obj.seen_job_ids.copy()
         jobs = await temp.check_now()
         if not jobs:
-            bot.send(chat_id, "😔 No *new* warehouse jobs in GTA right now.\n\nKeep monitoring with /monitor — you'll be alerted the second something posts.")
+            bot.send(chat_id, "😔 No *new* warehouse jobs in Ontario right now.\n\nKeep monitoring with /monitor — you'll be alerted the second something posts.")
         else:
             bot.send(chat_id, f"✅ Found *{len(jobs)} new job(s)*!", "Markdown")
             for job in jobs[:5]:
