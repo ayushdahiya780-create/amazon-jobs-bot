@@ -17,16 +17,38 @@ log = logging.getLogger(__name__)
 # Amazon Jobs search API (used by their own site)
 SEARCH_URL = "https://www.amazon.jobs/en/search.json"
 
-# GTA area keywords and coordinates
+# All Ontario cities with confirmed Amazon warehouse/FC presence
 LOCATIONS = [
-    "Toronto, Ontario, Canada",
+    # GTA — multiple FCs (YYZ1, YYZ2, YTO3, YTO4, sortation + delivery stations)
     "Mississauga, Ontario, Canada",
     "Brampton, Ontario, Canada",
+    "Toronto, Ontario, Canada",
     "Etobicoke, Ontario, Canada",
     "Scarborough, Ontario, Canada",
     "North York, Ontario, Canada",
+    "Vaughan, Ontario, Canada",
+    "Markham, Ontario, Canada",
+    "Richmond Hill, Ontario, Canada",
     "Ajax, Ontario, Canada",
     "Pickering, Ontario, Canada",
+    "Oakville, Ontario, Canada",
+    "Burlington, Ontario, Canada",
+    "Milton, Ontario, Canada",
+    # Ottawa — 4 existing FCs + massive new one under construction
+    "Ottawa, Ontario, Canada",
+    "Barrhaven, Ontario, Canada",
+    "Nepean, Ontario, Canada",
+    "Gloucester, Ontario, Canada",
+    # Hamilton area
+    "Hamilton, Ontario, Canada",
+    "Stoney Creek, Ontario, Canada",
+    # Kitchener-Waterloo
+    "Kitchener, Ontario, Canada",
+    "Cambridge, Ontario, Canada",
+    # London
+    "London, Ontario, Canada",
+    # Windsor
+    "Windsor, Ontario, Canada",
 ]
 
 # Warehouse job categories on amazon.jobs
